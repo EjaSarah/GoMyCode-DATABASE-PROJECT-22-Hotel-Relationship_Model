@@ -1,0 +1,88 @@
+<div>
+  <h1>
+    HOTEL hotel_id(primary key), hotel_name
+
+    <br />
+    TYPE
+    <br />
+    type_id(primary_key), type_name
+
+    <br />
+    SOLUTION (hotel_id(primary_key), hotel_name, #type_id(foreign_key))
+
+    <br /><br />
+    The relationship of type to hotel is many to many(1..n). This means many
+    hotels can be of the same type
+
+    <br />
+    <br />
+    The relationship of hotel to type table is one to many (1..1) which means
+    many hotels can be of the same type...3 start, 3star hotel, 5 star hotel
+    etc.
+    <br />
+
+    type_id in the hotel table is the foreign key from the type table which
+    creates a relationship between both tables
+  </h1>
+</div>
+
+<div>
+  <h2>
+    ROOM
+    <br />
+    room_id(primary_key), floor
+
+    <br /><br />
+    CATEGORY
+    <br /><br />
+    category_id(primary_key,) category_name, price,bed_number
+
+    <br /><br />
+    SOLUTION (room_id, floor, #category_id(foreign_key))
+
+    <br />
+    The relationship of room to hotel is one to many (1..1) Which means hotel
+    has many rooms in it..one hotel to many rooms
+    <br /><br />
+    While the relationship of category to room is many to many (1..n) This means
+    category has several rooms listed under it
+
+    <br />
+    Category id in the room table as foreign creates a connection between both
+    tables.
+    <br />
+    So one can take a look t a room column and cleary see which category room
+    falls into.
+  </h2>
+</div>
+
+<div>
+  <h3>
+    EMPLOYEE
+    <br />
+    employee_id(primary_key,) employee_name, employee_specialty
+
+    <br /><br />
+    DEPARTMENT
+    <br /><br />
+    deparment_id(primary_key) deparment_name
+    <br /><br />
+
+    SOLUTION
+    <br /><br />
+    (employee_id(primary_key), employee_name, employe_specialty,
+    #department_id(foreign_key))
+
+    <br />The deparment_id in the employee table as foreign creates the
+    relationship between both tables. One can look at the employe list in a
+    table and can see a link between a name and a department in which such a
+    name works or leads
+
+    <br />
+    The relatioship of department to employee is many to many (1..n), which many
+    employees can work in the same department.
+    <br />
+    While the relationship of hotel to employee is many to one (1..1) Which
+    means many eployee work in the hotel.
+  </h3>
+</div>
